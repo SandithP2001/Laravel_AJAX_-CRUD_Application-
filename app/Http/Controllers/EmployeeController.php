@@ -20,14 +20,15 @@ class EmployeeController extends Controller
     }
 
 
-    public function getall()
-    {
-        $employees = Employee::all();
-        return response()->json([
-            'status' => 200,
-            'employees' => $employees
-        ]);
-    }
+    public function getAll()
+{
+    $employees = Employee::all();
+    return response()->json([
+        'status' => 200,
+        'employees' => $employees
+    ]);
+}
+
 
     public function edit($id)
     {
